@@ -164,6 +164,29 @@
         .social-links a:hover {
             color: #D4AF37;
         }
+
+        /* Estilos del botón de WhatsApp */
+        .whatsapp-contact {
+            margin-top: 30px;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: linear-gradient(to right, #25D366, #128C7E);
+            color: #fff;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
         
         @media (max-width: 768px) {
             .container {
@@ -199,7 +222,7 @@
         
         <div class="launch-date">
             <p>Estén atentos a nuestro gran lanzamiento</p>
-            <div class="date">25 de Septiembre, 2023</div>
+            <div class="date">25 de Septiembre, 2025</div>
         </div>
         
         <div class="cta">
@@ -208,18 +231,24 @@
         </div>
         
         <div class="social-links">
-            <p>Síguenos en nuestras redes sociales</p>
+            <p>Síguenos en nuestras redes sociales </p>
             <div>
-                <!-- Iconos de redes sociales (usando texto por simplicidad) -->
                 <a href="#" aria-label="Instagram">📱</a>
                 <a href="#" aria-label="Facebook">📘</a>
                 <a href="#" aria-label="Twitter">🐦</a>
             </div>
         </div>
+
+        <!-- Botón de WhatsApp -->
+        <div class="whatsapp-contact">
+            <a href="https://wa.me/573043346833" target="_blank" class="whatsapp-btn">
+                💬 Contáctanos por WhatsApp
+            </a>
+        </div>
     </div>
 
     <script>
-        // Animación simple para el botón
+        // Animación simple para el botón de notificación
         document.querySelector('.notify-btn').addEventListener('click', function() {
             alert('¡Gracias por tu interés! Te notificaremos cuando lancemos nuestro sitio web.');
         });
